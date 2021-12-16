@@ -1,0 +1,10 @@
+# path to data splits
+train: C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/Dataset_320x320/images/train
+val: C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/Dataset_320x320/images/val
+test: C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/Dataset_320x320/images/test
+
+# Classes
+nc: 20  # number of classes
+names: ["person", "bird", "cat", "cow", "dog", "horse", "sheep",
+        "aeroplane", "bicycle", "boat", "bus", "car", "motorbike", "train",
+        "bottle", "chair", "diningtable", "pottedplant", "sofa", "tvmonitor"] # class names

@@ -1,0 +1,21 @@
+python detect.py --source C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/Dataset_320x320/images/test --weights C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/yolov5/Yolov5m_PascalVoc2007.pt --imgsz 320
+python detect.py --source 0 --weights C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/yolov5/Yolov5m_PascalVoc2007.pt --imgsz 320
+python detect.py --source C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/CalgaryDowntown.jpg --weights C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/yolov5/Yolov5m_PascalVoc2007.pt --imgsz 320
+python detect.py --source C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/yolov5/data/images/Sheep1.jpg --weights C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/yolov5/Yolov5m_PascalVoc2007.pt --imgsz 320
+
+pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio===0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+
+conda activate yolov5_OjectDetection
+cd C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/yolov5
+
+python train.py --img 320 --batch 16 --epochs 100 --data Pascal_voc_2007.yaml --weights yolov5s_PascalVoc2007_200epochs.pt --cache(Laptop)
+python train.py --img 320 --batch 16 --epochs 200 --data Pascal_voc_2007.yaml --weights yolov5m.pt --workers 4 --cache(Laptop)
+python train.py --img 320 --batch 16 --epochs 100 --data PascalVOC_2007.yaml --weights yolov5s.pt --cache(GDrive)
+
+tensorboard --logdir runs/train (localhost:6006)
+
+
+Demo:
+conda activate yolov5_OjectDetection
+cd C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/yolov5
+python detect.py --source C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/DemoImages --weights C:/Users/vyasd/Desktop/Yolov5_ObjectDetection/yolov5/Yolov5m_PascalVoc2007.pt --imgsz 320
