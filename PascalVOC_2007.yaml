@@ -1,0 +1,12 @@
+train: /content/drive/MyDrive/Dataset_320x320/images/train  
+val: /content/drive/MyDrive/Dataset_320x320/images/val
+test:  /content/drive/MyDrive/Dataset_320x320/images/test
+
+
+# Classes
+# number of classes
+nc: 20  
+names: ['person', 'bird', 'cat', 'cow', 'dog', 'horse', 'sheep', 'aeroplane', 'bicycle', 'boat',
+        'bus', 'car', 'motorbike', 'train', 'bottle', 'chair', 'diningtable', 'pottedplant', 'sofa', 'tvmonitor']  # class names
+
+
